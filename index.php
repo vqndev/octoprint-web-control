@@ -50,7 +50,9 @@ if($cmd === 'preheat'){
   
   
 }
-
+/*
+ * IMPORTANT TODO: SANITIZE the command line string 
+ */
 function octoprint_call($printer = '', $command = '') {
   $results = [];
   $printer_connection = get_printers()->get($printer);
